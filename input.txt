@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main( {
+    int a = 10
+    float b = 20.5;
+    char name[20] = "Istiyak"
+
+    if(a > b) {
+        printf("A is greater than B\n")
+    else
+        printf("B is greater than A\n");
+
+    for(int i = 0; i < 5 i++) {
+        printf("%d\n", i);
+    }
+
+    while(a < 20) 
+        a++
+        printf("Value of a: %d\n", a);
+
+    return 0
+}

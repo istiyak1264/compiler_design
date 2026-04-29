@@ -1,0 +1,7 @@
+Z = c/d
+w = a-b*Z+e-f
+Y = b*Z
+X = Y+e
+W = a-X
+V = W-f
+w = V

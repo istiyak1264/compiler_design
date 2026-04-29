@@ -1,0 +1,4 @@
+X=a-b
+Y=a+c
+Z=d+b
+C=a-d
