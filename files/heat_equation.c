@@ -13,7 +13,8 @@
 
 #define N    10       /* number of spatial intervals */
 #define L    1.0      /* rod length */
-#define T    0.1      /* total time */
+#define T    0.1  
+#define PI   3.1416    /* total time */
 #define ALPHA 1.0     /* thermal diffusivity */
 
 int main() {
@@ -30,7 +31,7 @@ int main() {
 
     /* --- Initial condition: u(x,0) = sin(pi*x/L) --- */
     for (i = 0; i <= N; i++)
-        u[i] = sin(M_PI * i * dx / L);
+        u[i] = sin(PI * i * dx / L);
 
     /* --- Time stepping --- */
     for (k = 0; k < steps; k++) {
@@ -54,7 +55,7 @@ int main() {
     printf("------------------------------------------------------------\n");
     for (i = 0; i <= N; i++) {
         double x     = i * dx;
-        double exact = sin(M_PI * x / L) * exp(-ALPHA * M_PI*M_PI * t_final / (L*L));
+        double exact = sin(PI * x / L) * exp(-ALPHA * PI*PI * t_final / (L*L));
         printf("%.4f\t\t%.6f\t%.6f\t%.2e\n", x, u[i], exact, fabs(u[i]-exact));
     }
 
